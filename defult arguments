@@ -1,0 +1,5 @@
+def geeet(name, message="hello"):
+    print(message + "," + name + "!")
+
+geeet("alice") # Changed to geeet
+geeet("bob", "hi") # Changed to geeet
