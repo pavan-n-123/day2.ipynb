@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    float price = 45.5;
+    float *ptr = &price;  
+
+    printf("Price: %.2f\n", price);
+    printf("Address of price: %p\n", &price);
+    printf("Value using pointer: %.2f\n", *ptr);
+
+    return 0;
+}
