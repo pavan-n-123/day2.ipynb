@@ -1,0 +1,22 @@
+3■■ Matrix Transpose (Single malloc)
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+ printf("pavan kumar N\n");
+ printf("1SV24CS093\n");
+ int R, C;
+ printf("Enter rows and cols: ");
+ scanf("%d %d", &R, &C);
+ int *mat = (int*) malloc(R * C * sizeof(int));
+ printf("Enter elements:\n");
+ for (int i = 0; i < R * C; i++)
+ scanf("%d", mat + i);
+ printf("Transpose:\n");
+ for (int i = 0; i < C; i++) {
+ for (int j = 0; j < R; j++)
+ printf("%d ", *(mat + j * C + i));
+ printf("\n");
+ }
+ free(mat);
+ return 0;
+}
