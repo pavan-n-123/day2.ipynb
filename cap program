@@ -1,0 +1,15 @@
+//fixed capacity by using macro funcation called CAP
+#include<stdio.h>
+#define cap 50
+void pavan (int a[],int n);
+void pavan (int a[cap],int n){
+for (i=0;i<n&&i<cap;i++){
+a[i]=i;
+printf("%d",a[i]);
+
+}
+int main()
+{
+int a[CAP],n=30;
+pavan(a,n)
+}
