@@ -1,0 +1,6 @@
+void peek() {
+ if(top == -1) 
+printf("Stack is empty\n");
+ else 
+printf("Top element: %d\n", stack[top]);
+}
